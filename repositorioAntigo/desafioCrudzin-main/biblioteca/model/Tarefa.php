@@ -17,7 +17,7 @@ class Tarefa {
         $this->id = $id;
     }
 
-    // nome da Tarefa
+    // Nome da Tarefa
     public function getNomeTarefa() {
         return $this->nome_tarefa;
     }
@@ -25,7 +25,7 @@ class Tarefa {
         $this->nome_tarefa = $nome;
     }
 
-    // categoria
+    // Categoria
     public function getCategoria() {
         return $this->categoria;
     }
@@ -33,7 +33,7 @@ class Tarefa {
         $this->categoria = $categoria;
     }
 
-    // duração
+    // Duração
     public function getDuracaoMinutos() {
         return $this->duracao_minutos;
     }
@@ -41,7 +41,7 @@ class Tarefa {
         $this->duracao_minutos = $minutos;
     }
 
-    // prioridade
+    // Prioridade
     public function getPrioridade() {
         return $this->prioridade;
     }
@@ -49,7 +49,7 @@ class Tarefa {
         $this->prioridade = $prioridade;
     }
 
-    // data de entrega
+    // Data de Entrega
     public function getDataEntrega() {
         return $this->data_entrega;
     }
@@ -57,6 +57,6 @@ class Tarefa {
         $this->data_entrega = $data;
     }
 }
-
+}
 
 

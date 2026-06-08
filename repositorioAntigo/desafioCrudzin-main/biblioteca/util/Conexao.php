@@ -15,16 +15,13 @@ class Conexao {
                 //Define o tipo do retorno das consultas
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC);
 
-            self::$conexao =
-        new PDO(
-            "mysql:host=localhost;port=8889;dbname=tarefas_bd",
-            "root",
-            "root",
-            $opcoes
-        );
+            self::$conexao = 
+                new PDO("mysql:host=localhost;dbname=db_biblioteca", 
+                        "root", 
+                        "bancodedados", 
+                        $opcoes);
+        }  
 
         return self::$conexao;
     }
-        }
-             }
-    
+}

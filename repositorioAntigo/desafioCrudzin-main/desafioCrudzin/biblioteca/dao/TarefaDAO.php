@@ -7,7 +7,7 @@ class TarefaDAO
 {
 
     //metodo para salvar no Banco
-    public function inserir(Tarefa $tarefa) //tipagem de parametro
+    public function inserir(Tarefa $tarefa) //Tipagem de Parâmetro
     {
         $sql = "INSERT INTO tarefas (nome_tarefa, categorias_permitidas, duracao_minutos, prioridade, data_entrega) 
                 VALUES (?, ?, ?, ?, ?)";
@@ -25,7 +25,7 @@ class TarefaDAO
         ]);
     }
 
-    //metodo para buscar todos
+    //metodo para uscar todos
     public function listar(){
         $sql = "SELECT * FROM tarefas";
 
